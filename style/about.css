@@ -3,18 +3,13 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 0px;
     grid-auto-rows: auto;
-    grid-template-areas: 
-    "content1  content1   content1 content1" 
-    "content2  content2   content2 content2" 
-    "content4  content4   content5 content5" 
-    "content7  content7   content7 content7";
-
+    grid-template-areas: "content1  content1   content1 content1" "content2  content2   content2 content2" "content3  content3   content4 content4" "content7  content7   content7 content7";
 }
 
 /*contents */
 
 .panel1 {
-    grid-area: content4;
+    grid-area: content3;
     max-height: 20px;
     padding: 20px;
     color: #ffeaf8;
@@ -27,38 +22,97 @@
 }
 
 .title {
-    grid-area: content4;
+    grid-area: content3;
     margin-left: 20px;
     font-family: Merriweather;
     font-size: 20px;
-    margin-top: 220px;
+    margin-top: 225px;
     color: #ffeaf8;
 }
 
 .box-l {
-    grid-area: content4;
+    grid-area: content3;
     height: auto;
     margin: 20px;
     padding: 10px;
     background-color: #000000c2;
-margin-top: 240px;
-color: #ffeaf8;
+    margin-top: 250px;
+    color: #ffeaf8;
 }
 
 .lead {
-    grid-area: content5;
+    grid-area: content4;
     margin-left: 20px;
+    margin-top: 15px;
     font-family: Merriweather;
     font-size: 20px;
     color: #ffeaf8;
 }
 
 .box-r {
-    grid-area: content5;
+    grid-area: content4;
     height: auto;
     font-size: 20px;
     margin: 20px;
+    margin-top: 40px;
     padding: 10px;
     background-color: #000000c2;
     color: #ffeaf8;
+}
+
+label {
+    padding: 0x;
+    text-align: right;
+}
+
+form {
+    float: left;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+input {
+    width: 300px;
+    border: solid 3px white;
+    line-height: 35px;
+    outline: none;
+    padding: 0;
+    margin: 1px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #02096dff;
+    font-family: Merriweather;
+}
+
+textarea {
+    width: 100%;
+    border: solid 3px white;
+    line-height: 50px;
+    outline: none;
+    padding: 0;
+    margin: 1px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #02096dff;
+    font-family: Merriweather;
+}
+
+#submit {
+    background-color: #02096dff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffeaf8;
+    width: 100px;
+    height: 50px;
+    border: none;
+    resize: none;
+    outline: none;
+    border-radius: 5px;
+    align-content: center;
+    margin-left: 40%
+}
+
+#submit:hover {
+    color: #02096dff;
+    background-color: #ffe100ff;
 }
